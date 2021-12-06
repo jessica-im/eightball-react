@@ -1,18 +1,27 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Header from './components/Header'
 import PlacesListPage from './pages/PlacesListPage'
+import PlacePage from './pages/PlacePage'
+
 
 const App = () => {
 
 
      return (
-        <div>
+          <Router>
+          <div>
                <Header />
-               <PlacesListPage />
-        </div>
+               <Routes>
+                    <Route path="/" exact element={<PlacesListPage />} />
+                    <Route path="/place/:id" element={<PlacePage />} />
+               </Routes>
+          </div>
+
+          </Router>
      );
 }
 

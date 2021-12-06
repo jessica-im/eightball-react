@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Place = ( {place} ) => {
 
      return (
-          <div>
+          <Link to={`/place/${place.id}`}>
                <h3>{place.locationName}</h3>
-          </div>
+          </Link>
      )
 }
 
