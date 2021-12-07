@@ -3,9 +3,9 @@ import React from 'react'
 const Header = () => {
 
      return(
-          <div>
-               <h1>eightball</h1>
-               <h2>where i've played</h2>
+          <div className="header">
+               <h1>eightball chronicles</h1>
+               <p className="header-break">where i've played</p>
           </div>
      )
 }

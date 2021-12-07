@@ -32,8 +32,8 @@ const PlacePage = () => {
      }, [])
 
      return(
-          <div>
-               <Link to="/">
+          <div className="place-page">
+               <Link to="/" className="back-link">
                     <h3>Back</h3>
                </Link>
                <p>{place.locationName}</p>

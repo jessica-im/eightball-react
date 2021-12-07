@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const AddPlaceLink = () => {
 
      return (
-          <div>
-               <Link to="/new">+</Link>
+          <div className="add-link-container">
+               <Link to="/new" className="add-link">+</Link>
           </div>
 
      )

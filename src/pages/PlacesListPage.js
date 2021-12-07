@@ -31,17 +31,21 @@ const PlacesListPage = () => {
      }, [])
 
      return (
+          <div>
                <div>
                     <AddPlaceLink getPlaces={getPlaces} />
-                    <div className="placeList">
+               </div>
+               <div className="place-list-container">
+                    <div className="place-list">
                          {places.map((place) => (
-                              <>
+                              <div className="place-card">
                                    <Place key={place.id} place={place} />
-                                   <button onClick={handleDelete} value={place.id}>delete</button>
-                              </>
+                                   <button className="delete-button" onClick={handleDelete} value={place.id}>delete</button>
+                              </div>
                          ))}
                     </div>
                </div>
+          </div>
      )
 }
 
