@@ -27,9 +27,6 @@ const PlacePage = () => {
      }
 
 
-
-
-
      useEffect(() => {
           getPlace()
      }, [])

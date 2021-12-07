@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import Place from '../components/Place'
 import axios from 'axios'
 
+import AddPlaceLink from '../components/AddPlaceLink'
+
+
 const PlacesListPage = () => {
 
      let [ places, setPlaces ] = useState([])
@@ -29,6 +32,7 @@ const PlacesListPage = () => {
 
      return (
                <div>
+                    <AddPlaceLink places={places} getPlaces={getPlaces}/>
                     <div className="placeList">
                          {places.map((place) => (
                               <>

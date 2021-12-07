@@ -4,22 +4,21 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Header from './components/Header'
-import AddPlaceLink from './components/AddPlaceLink'
 import PlacesListPage from './pages/PlacesListPage'
 import PlacePage from './pages/PlacePage'
+import AddPlace from './components/AddPlace'
 
 
 const App = () => {
-
 
      return (
           <Router>
           <div>
                <Header />
-               <AddPlaceLink />
                <Routes>
                     <Route path="/" exact element={<PlacesListPage />} />
-                    <Route path="/place/:id" element={<PlacePage />} />
+                    <Route path="/place/:id" exact element={<PlacePage />} />
+                    <Route path="/new" exact element={<AddPlace />} />
                </Routes>
           </div>
 

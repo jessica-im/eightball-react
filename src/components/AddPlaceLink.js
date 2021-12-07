@@ -5,7 +5,7 @@ const AddPlaceLink = () => {
 
      return (
           <div>
-               <Link to="/place/new">Add New Place</Link>
+               <Link to="/new">+</Link>
           </div>
 
      )
