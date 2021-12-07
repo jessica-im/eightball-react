@@ -44,7 +44,6 @@ const PlacePage = () => {
                <p>{place.tableBrand}</p>
                <p>{place.tableCondition}</p>
                <p>{place.cueCondition}</p>
-               <p>{place.hasChalk}</p>
                <p>{place.vibe}</p>
                <p>{place.newFriends}</p>
                <EditPlace place={place} handleUpdate={handleUpdate} />

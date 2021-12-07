@@ -32,7 +32,7 @@ const PlacesListPage = () => {
 
      return (
                <div>
-                    <AddPlaceLink places={places} getPlaces={getPlaces}/>
+                    <AddPlaceLink getPlaces={getPlaces} />
                     <div className="placeList">
                          {places.map((place) => (
                               <>

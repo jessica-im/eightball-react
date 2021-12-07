@@ -18,7 +18,7 @@ const EditPlace = ({ place, handleUpdate }) => {
 
      useEffect(() => {
           setEditPlace(place);
-     }, [place]); //dependency array, 
+     }, [place]); //dependency array,
 
      return(
           <>
@@ -41,8 +41,6 @@ const EditPlace = ({ place, handleUpdate }) => {
                          <input type="text" name="tableCondition" onChange={handleChange} value={editPlace.tableCondition} />
                          <label htmlFor="cueCondition">Cue Condition: </label>
                          <input type="text" name="cueCondition" onChange={handleChange} value={editPlace.cueCondition} />
-                         <label htmlFor="hasChalk">Has Chalk: </label>
-                         <input type="checkbox" name="hasChalk" onChange={handleChange} value={editPlace.locationName} />
                          <label htmlFor="vibe">Vibe: </label>
                          <input type="text" name="vibe" onChange={handleChange} value={editPlace.vibe} />
                          <label htmlFor="newFriends">New Friends: </label>
