@@ -5,7 +5,7 @@ const Place = ( { place, handleDelete } ) => {
 
      return (
           <div>
-               <Link to={`/place/${place.id}`}>
+               <Link to={`/place/${place.id}`} className="place-link">
                     <h3>{place.locationName}</h3>
                </Link>
                <h4>{place.locationCity}</h4>
