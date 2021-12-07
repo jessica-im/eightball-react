@@ -40,9 +40,11 @@ const AddPlace = () => {
 
      return (
           <div>
-               <Link to="/">
-                    <h3>Back</h3>
-               </Link>
+               <div className="back-link-container">
+                    <Link to="/" className="back-link">
+                         <h3>&#x2B05;</h3>
+                    </Link>
+               </div>
                <h2>Add New Place</h2>
                <form onSubmit={handleNewPlaceSubmit}>
                     <label htmlFor="locationName">Place Name: </label>

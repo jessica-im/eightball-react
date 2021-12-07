@@ -1,5 +1,5 @@
 * {
-     text-align: center;
+     /* text-align: center; */
      text-transform: lowercase;
      background-color: black;
      color: white;
@@ -22,9 +22,19 @@ h4 {
      padding-bottom: 2px;
 }
 
+input[type=submit] {
+     font-family: 'Futura';
+     font-size: 16px;
+     border: none;
+     background-color: white;
+     color: black;
+     padding: 2px 7px;
+     margin-top: 10px;
+}
 
 .header h1 {
      font-family: 'Futura';
+     text-align: center;
      color: white;
      margin-bottom: 0;
 }
@@ -32,23 +42,27 @@ h4 {
 .header-break {
      font-family: "Redacted Script";
      font-size: 20px;
+     text-align: center;
      color: white;
      margin: 0;
+}
+
+.search-container {
+     display: flex;
+     justify-content: center;
 }
 
 .search {
      font-family: 'Coming Soon';
      font-size: 20px;
-     margin-top: 10px;
+     text-align: center;
      width: 80%;
      border: 1px solid rgb(204,204,255);
-}
-
-input[type=text].search {
-
+     margin-top: 10px;
 }
 
 .place-list-header {
+     text-align: center;
      border: 1px solid white;
      width: 90%;
      margin: 20px auto;
@@ -105,4 +119,52 @@ input[type=text].search {
      margin-top: 10px;
      margin-bottom: 10px;
      margin-right: 10px;
+}
+
+/* //////////////////////////////
+// place page
+////////////////////////////// */
+
+.back-link-container {
+     display: flex;
+     justify-content: space-between;
+     margin: 20px 20px;
+}
+
+.back-link {
+     text-decoration: none;
+}
+
+.place-details-container {
+     padding-left: 30px;
+     padding-right: 30px;
+}
+
+.place-detail-table {
+     text-align: left;
+     font-family: 'Coming Soon';
+}
+
+.place-title {
+     font-family: 'Futura';
+     font-size: 18px;
+     vertical-align: top;
+     width: 50%;
+}
+
+/* ///// edit form ///// */
+
+.edit-form-container {
+     text-align: center;
+     margin-top: 20px;
+     font-family: 'Futura';
+}
+
+.edit-form {
+     font-family: 'Futura';
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 10px;
+     gap: 5px;
 }

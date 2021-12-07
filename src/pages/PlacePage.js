@@ -40,21 +40,53 @@ const PlacePage = () => {
 
      return(
           <div className="place-page">
-               <Link to="/" className="back-link">
-                    <h3>Back</h3>
-               </Link>
-               <p>{place.locationName}</p>
-               <p>{place.locationAddress}</p>
-               <p>{place.locationCity}</p>
-               <p>{place.locationState}</p>
-               <p>{place.tableSize}</p>
-               <p>{place.tableBrand}</p>
-               <p>{place.tableCondition}</p>
-               <p>{place.cueCondition}</p>
-               <p>{place.vibe}</p>
-               <p>{place.newFriends}</p>
+               <div className="back-link-container">
+                    <Link to="/" className="back-link">
+                         <h3>&#x2B05;</h3>
+                    </Link>
+                    <button className="delete-button" onClick={handleDelete} value={place.id}>delete</button>
+               </div>
+               <div className="place-details-container">
+                    <table className="place-detail-table">
+                         <tr>
+                              <td className="place-title">where:</td>
+                              <td>{place.locationName}</td>
+                         </tr>
+                         <tr>
+                              <td className="place-title">address:</td>
+                              <td>{place.locationAddress}</td>
+                         </tr>
+                         <tr>
+                              <td className="place-title">city / state:</td>
+                              <td>{place.locationCity} / {place.locationState}</td>
+                         </tr>
+                         <tr>
+                              <td className="place-title">table size:</td>
+                              <td>{place.tableSize}</td>
+                         </tr>
+                         <tr>
+                              <td className="place-title">table brand:</td>
+                              <td>{place.tableBrand}</td>
+                         </tr>
+                         <tr>
+                              <td className="place-title">table condition:</td>
+                              <td>{place.tableCondition}</td>
+                         </tr>
+                         <tr>
+                              <td className="place-title">cue condition:</td>
+                              <td>{place.cueCondition}</td>
+                         </tr>
+                         <tr>
+                              <td className="place-title">vibe:</td>
+                              <td>{place.vibe}</td>
+                         </tr>
+                         <tr>
+                              <td className="place-title">new friends:</td>
+                              <td>{place.newFriends}</td>
+                         </tr>
+                    </table>
+               </div>
                <EditPlace place={place} handleUpdate={handleUpdate} />
-               <button className="delete-button" onClick={handleDelete} value={place.id}>delete</button>
           </div>
      )
 }

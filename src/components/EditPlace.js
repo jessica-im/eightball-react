@@ -21,12 +21,12 @@ const EditPlace = ({ place, handleUpdate }) => {
      }, [place]); //dependency array,
 
      return(
-          <>
+          <div className="edit-form-container">
                <details>
                     <summary>edit place</summary>
-                    <form onSubmit={handleSubmit}>
+                    <form className="edit-form" onSubmit={handleSubmit}>
                          <label htmlFor="locationName">Place Name: </label>
-                         <input type="text" name="locationName" onChange={handleChange} value={editPlace.locationName} />
+                         <input className="edit-field" type="text" name="locationName" onChange={handleChange} value={editPlace.locationName} />
                          <label htmlFor="locationAddress">Address: </label>
                          <input type="text" name="locationAddress" onChange={handleChange} value={editPlace.locationAddress} />
                          <label htmlFor="locationCity">City: </label>
@@ -48,7 +48,7 @@ const EditPlace = ({ place, handleUpdate }) => {
                          <input type="submit" value="edit place" />
                     </form>
                </details>
-          </>
+          </div>
      )
 }
 

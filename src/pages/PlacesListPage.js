@@ -25,7 +25,7 @@ const PlacesListPage = () => {
 
      return (
           <div>
-               <div className="search-add-container">
+               <div className="search-container">
                     <input className="search" type="text" placeholder="search places..." onChange={ (event) => {setSearchTerm(event.target.value)}}/>
                </div>
                <h2 className="place-list-header">places</h2>
