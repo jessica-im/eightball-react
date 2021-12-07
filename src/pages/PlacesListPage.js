@@ -31,7 +31,10 @@ const PlacesListPage = () => {
                <div>
                     <div className="placeList">
                          {places.map((place) => (
-                              <Place key={place.id} place={place} />
+                              <>
+                                   <Place key={place.id} place={place} />
+                                   <button onClick={handleDelete} value={place.id}>delete</button>
+                              </>
                          ))}
                     </div>
                </div>

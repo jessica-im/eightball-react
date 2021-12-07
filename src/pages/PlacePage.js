@@ -26,14 +26,8 @@ const PlacePage = () => {
           })
      }
 
-     const handleChange = (event) => {
-          setPlace({ ...place, [event.target.name]: event.target.value })
-     }
 
-     const handleSubmit = (event) => {
-          event.preventDefault()
-          handleUpdate(place)
-     }
+
 
 
      useEffect(() => {
@@ -56,7 +50,7 @@ const PlacePage = () => {
                <p>{place.hasChalk}</p>
                <p>{place.vibe}</p>
                <p>{place.newFriends}</p>
-               <EditPlace place={place} handleUpdate={handleUpdate} handleChange={handleChange} handleSubmit={handleSubmit} />
+               <EditPlace place={place} handleUpdate={handleUpdate} />
           </div>
      )
 }
