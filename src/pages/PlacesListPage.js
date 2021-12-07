@@ -3,7 +3,6 @@ import Place from '../components/Place'
 import axios from 'axios'
 
 import AddPlaceLink from '../components/AddPlaceLink'
-import Search from '../components/Search'
 
 const PlacesListPage = () => {
 
@@ -33,13 +32,12 @@ const PlacesListPage = () => {
 
      return (
           <div>
-               <div>
-                    <input type="text" placeholder="search..." onChange={ (event) => {setSearchTerm(event.target.value)}}/>
-                    <AddPlaceLink getPlaces={getPlaces} />
+               <div className="search-add-container">
+                    <input className="search" type="text" placeholder="search places..." onChange={ (event) => {setSearchTerm(event.target.value)}}/>
                </div>
+               <h2 className="place-list-header">places</h2>
                <div className="place-list-container">
                     <div className="place-list">
-                         <h2 className="place-list-header">places</h2>
                          {places.filter((place) => {
                               if (searchTerm == "") {
                                    return place
@@ -55,6 +53,9 @@ const PlacesListPage = () => {
                               </div>
                          ))}
                     </div>
+               </div>
+               <div>
+                    <AddPlaceLink getPlaces={getPlaces} />
                </div>
           </div>
      )
