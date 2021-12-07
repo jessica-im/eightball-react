@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Header from './components/Header'
+import AddPlaceLink from './components/AddPlaceLink'
 import PlacesListPage from './pages/PlacesListPage'
 import PlacePage from './pages/PlacePage'
 
@@ -15,6 +16,7 @@ const App = () => {
           <Router>
           <div>
                <Header />
+               <AddPlaceLink />
                <Routes>
                     <Route path="/" exact element={<PlacesListPage />} />
                     <Route path="/place/:id" element={<PlacePage />} />

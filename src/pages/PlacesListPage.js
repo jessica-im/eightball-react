@@ -16,18 +16,25 @@ const PlacesListPage = () => {
           .catch((error) => console.log(error))
      }
 
+     const handleDelete = (event) => {
+          axios.delete(`https://pocket-eightball.herokuapp.com/api/places/` + event.target.value)
+          .then((response) => {
+               getPlaces()
+          })
+     }
+
      useEffect(() => {
           getPlaces()
      }, [])
 
      return (
-          <div>
-               <div className="placeList">
-                    {places.map((place) => (
-                         <Place key={place.id} place={place}/>
-                    ))}
+               <div>
+                    <div className="placeList">
+                         {places.map((place) => (
+                              <Place key={place.id} place={place} />
+                         ))}
+                    </div>
                </div>
-          </div>
      )
 }
 
