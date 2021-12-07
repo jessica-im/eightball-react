@@ -35,6 +35,7 @@ const AddPlace = () => {
           event.preventDefault()
           handleCreate(newPlace)
           setNewPlace(emptyPlace)
+          window.location.href = "/"
      }
 
      return (

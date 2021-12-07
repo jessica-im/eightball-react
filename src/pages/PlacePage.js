@@ -26,6 +26,13 @@ const PlacePage = () => {
           })
      }
 
+     const handleDelete = (event) => {
+          axios.delete(`https://pocket-eightball.herokuapp.com/api/places/` + event.target.value)
+          .then((response) => {
+               // getPlaces()
+               window.location.href = "/";
+          })
+     }
 
      useEffect(() => {
           getPlace()
@@ -47,6 +54,7 @@ const PlacePage = () => {
                <p>{place.vibe}</p>
                <p>{place.newFriends}</p>
                <EditPlace place={place} handleUpdate={handleUpdate} />
+               <button className="delete-button" onClick={handleDelete} value={place.id}>delete</button>
           </div>
      )
 }
