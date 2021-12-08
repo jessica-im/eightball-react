@@ -46,27 +46,27 @@ const AddPlace = () => {
                     </Link>
                </div>
                <h2>Add New Place</h2>
-               <form onSubmit={handleNewPlaceSubmit}>
+               <form className="add-form" onSubmit={handleNewPlaceSubmit}>
                     <label htmlFor="locationName">Place Name: </label>
-                    <input type="text" name="locationName" onChange={handleNewChange} value={newPlace?.locationName} />
+                    <input className="add-field" type="text" name="locationName" onChange={handleNewChange} value={newPlace?.locationName} />
                     <label htmlFor="locationAddress">Address: </label>
-                    <input type="text" name="locationAddress" onChange={handleNewChange} value={newPlace?.locationAddress} />
+                    <input className="add-field" type="text" name="locationAddress" onChange={handleNewChange} value={newPlace?.locationAddress} />
                     <label htmlFor="locationCity">City: </label>
-                    <input type="text" name="locationCity" onChange={handleNewChange} value={newPlace?.locationCity} />
+                    <input className="add-field" type="text" name="locationCity" onChange={handleNewChange} value={newPlace?.locationCity} />
                     <label htmlFor="locationState">State: </label>
-                    <input type="text" name="locationState" onChange={handleNewChange} value={newPlace?.locationState} />
+                    <input className="add-field" type="text" name="locationState" onChange={handleNewChange} value={newPlace?.locationState} />
                     <label htmlFor="tableSize">Table Size: </label>
-                    <input type="text" name="tableSize" onChange={handleNewChange} value={newPlace?.tableSize} />
+                    <input className="add-field" type="text" name="tableSize" onChange={handleNewChange} value={newPlace?.tableSize} />
                     <label htmlFor="tableBrand">Table Brand: </label>
-                    <input type="text" name="tableBrand" onChange={handleNewChange} value={newPlace?.tableBrand} />
+                    <input className="add-field" type="text" name="tableBrand" onChange={handleNewChange} value={newPlace?.tableBrand} />
                     <label htmlFor="tableCondition">Table Condition: </label>
-                    <input type="text" name="tableCondition" onChange={handleNewChange} value={newPlace?.tableCondition} />
+                    <input className="add-field" type="text" name="tableCondition" onChange={handleNewChange} value={newPlace?.tableCondition} />
                     <label htmlFor="cueCondition">Cue Condition: </label>
-                    <input type="text" name="cueCondition" onChange={handleNewChange} value={newPlace?.cueCondition} />
+                    <input className="add-field" type="text" name="cueCondition" onChange={handleNewChange} value={newPlace?.cueCondition} />
                     <label htmlFor="vibe">Vibe: </label>
-                    <input type="text" name="vibe" onChange={handleNewChange} value={newPlace?.vibe} />
+                    <input className="add-field" type="text" name="vibe" onChange={handleNewChange} value={newPlace?.vibe} />
                     <label htmlFor="newFriends">New Friends: </label>
-                    <input type="text" name="newFriends" onChange={handleNewChange} value={newPlace?.newFriends} />
+                    <input className="add-field" type="text" name="newFriends" onChange={handleNewChange} value={newPlace?.newFriends} />
                     <input type="submit" value="add place" />
                </form>
           </div>

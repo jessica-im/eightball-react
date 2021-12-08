@@ -26,7 +26,13 @@ const PlacesListPage = () => {
      return (
           <div className="content-container">
                <div className="search-container">
+                    <div className="eightball-container">
+                         <img className="eightball" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/pool-8-ball_1f3b1.png" alt="eightball" />
+                    </div>
                     <input className="search" type="text" placeholder="search places..." onChange={ (event) => {setSearchTerm(event.target.value)}}/>
+                    <div>
+                         <img className="eightball" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/pool-8-ball_1f3b1.png" alt="eightball" />
+                    </div>
                </div>
                <h2 className="place-list-header">places</h2>
                <div className="place-list-container">

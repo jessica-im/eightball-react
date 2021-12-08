@@ -24,13 +24,14 @@ html {
 
 h2 {
      font-family: 'Futura';
+     text-align: center;
 }
 
 h3 {
      font-size: 18px;
      text-align: center;
      margin-bottom: 0;
-     margin-top: 5px;
+     margin-top: 10px;
 }
 
 h4 {
@@ -59,9 +60,18 @@ input[type=submit] {
 .header h1 {
      font-family: 'Futura';
      text-align: center;
+     color: rgb(248, 40, 136, .4);
+     margin-bottom: 0;
+     -webkit-text-stroke: 1px rgb(248, 40, 136);
+     text-shadow: 0px 0px 30px rgb(248, 40, 136);
+}
+
+/* .header h1 {
+     font-family: 'Futura';
+     text-align: center;
      color: white;
      margin-bottom: 0;
-}
+} */
 
 .header-break {
      font-family: "Redacted Script";
@@ -74,13 +84,24 @@ input[type=submit] {
 .search-container {
      display: flex;
      justify-content: center;
+     align-items: center;
+     gap: 10px;
+}
+
+.eightball {
+     width: 20px;
+     display: inline-block;
+     object-fit: contain;
+     margin-top: 10px;
+     box-shadow: 0px 0px 28px 2px rgb(126,225,186);
+     border-radius: 50%;
 }
 
 .search {
      font-family: 'Coming Soon';
      font-size: 20px;
      text-align: center;
-     width: 80%;
+     width: 70%;
      border: 1px solid rgb(204,204,255);
      margin-top: 10px;
 }
@@ -124,6 +145,8 @@ input[type=submit] {
 }
 
 .place-card {
+     display: flex;
+     justify-content: center;
      color: white;
      border-bottom: 1px solid gray;
      border-top: none;
@@ -165,8 +188,8 @@ input[type=submit] {
 }
 
 .place-details-container {
-     padding-left: 30px;
-     padding-right: 30px;
+     display: flex;
+     justify-content: center;
 }
 
 .place-detail-table {
@@ -178,7 +201,7 @@ input[type=submit] {
      font-family: 'Futura';
      font-size: 18px;
      vertical-align: top;
-     width: 50%;
+     width: 40%;
 }
 
 /* ///// edit form ///// */
@@ -189,6 +212,14 @@ input[type=submit] {
      font-family: 'Futura';
 }
 
+.edit-summary {
+     color: rgb(204,204,255);
+     border: 1px solid white;
+     padding: 5px;
+     width: 20%;
+     margin: 0 auto;
+}
+
 .edit-form {
      font-family: 'Futura';
      display: flex;
@@ -196,4 +227,41 @@ input[type=submit] {
      align-items: center;
      margin-top: 10px;
      gap: 5px;
+}
+
+.edit-field {
+     font-family: 'Futura';
+     font-size: 16px;
+     color: rgb(204,204,255);
+     border: 1px solid white;
+     width: 70%;
+     padding: 5px 5px 0;
+}
+
+.delete-button {
+     font-family: 'Futura';
+     background-color: rgb(128,0,0, .7);
+     border: none;
+     padding: 0 10px;
+}
+
+/* //////////////////////////////
+// add page
+////////////////////////////// */
+
+.add-form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-family: 'Futura';
+     gap: 5px;
+}
+
+.add-field {
+     font-family: 'Futura';
+     font-size: 16px;
+     color: rgb(204,204,255);
+     border: 1px solid white;
+     width: 70%;
+     padding: 5px 5px 0;
 }

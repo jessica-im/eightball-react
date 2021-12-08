@@ -53,35 +53,35 @@ const PlacePage = () => {
                          </tr>
                          <tr>
                               <td className="place-title">address:</td>
-                              <td>{place.locationAddress}</td>
+                              <td className="place-detail">{place.locationAddress}</td>
                          </tr>
                          <tr>
                               <td className="place-title">city / state:</td>
-                              <td>{place.locationCity} / {place.locationState}</td>
+                              <td className="place-detail">{place.locationCity} / {place.locationState}</td>
                          </tr>
                          <tr>
                               <td className="place-title">table size:</td>
-                              <td>{place.tableSize}</td>
+                              <td className="place-detail">{place.tableSize}</td>
                          </tr>
                          <tr>
                               <td className="place-title">table brand:</td>
-                              <td>{place.tableBrand}</td>
+                              <td className="place-detail">{place.tableBrand}</td>
                          </tr>
                          <tr>
                               <td className="place-title">table condition:</td>
-                              <td>{place.tableCondition}</td>
+                              <td className="place-detail">{place.tableCondition}</td>
                          </tr>
                          <tr>
                               <td className="place-title">cue condition:</td>
-                              <td>{place.cueCondition}</td>
+                              <td className="place-detail">{place.cueCondition}</td>
                          </tr>
                          <tr>
                               <td className="place-title">vibe:</td>
-                              <td>{place.vibe}</td>
+                              <td className="place-detail">{place.vibe}</td>
                          </tr>
                          <tr>
                               <td className="place-title">new friends:</td>
-                              <td>{place.newFriends}</td>
+                              <td className="place-detail">{place.newFriends}</td>
                          </tr>
                     </table>
                </div>

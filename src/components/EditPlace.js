@@ -20,28 +20,28 @@ const EditPlace = ({ place, handleUpdate }) => {
      return(
           <div className="edit-form-container">
                <details>
-                    <summary>edit place</summary>
+                    <summary className="edit-summary">edit place</summary>
                     <form className="edit-form" onSubmit={handleSubmit}>
                          <label htmlFor="locationName">Place Name: </label>
                          <input className="edit-field" type="text" name="locationName" onChange={handleChange} value={editPlace.locationName} />
                          <label htmlFor="locationAddress">Address: </label>
-                         <input type="text" name="locationAddress" onChange={handleChange} value={editPlace.locationAddress} />
+                         <input className="edit-field" type="text" name="locationAddress" onChange={handleChange} value={editPlace.locationAddress} />
                          <label htmlFor="locationCity">City: </label>
-                         <input type="text" name="locationCity" onChange={handleChange} value={editPlace.locationCity} />
+                         <input className="edit-field" type="text" name="locationCity" onChange={handleChange} value={editPlace.locationCity} />
                          <label htmlFor="locationState">State: </label>
-                         <input type="text" name="locationState" onChange={handleChange} value={editPlace.locationState} />
+                         <input className="edit-field" type="text" name="locationState" onChange={handleChange} value={editPlace.locationState} />
                          <label htmlFor="tableSize">Table Size: </label>
-                         <input type="text" name="tableSize" onChange={handleChange} value={editPlace.tableSize} />
+                         <input className="edit-field" type="text" name="tableSize" onChange={handleChange} value={editPlace.tableSize} />
                          <label htmlFor="tableBrand">Table Brand: </label>
-                         <input type="text" name="tableBrand" onChange={handleChange} value={editPlace.tableBrand} />
+                         <input className="edit-field" type="text" name="tableBrand" onChange={handleChange} value={editPlace.tableBrand} />
                          <label htmlFor="tableCondition">Table Condition: </label>
-                         <input type="text" name="tableCondition" onChange={handleChange} value={editPlace.tableCondition} />
+                         <input className="edit-field" type="text" name="tableCondition" onChange={handleChange} value={editPlace.tableCondition} />
                          <label htmlFor="cueCondition">Cue Condition: </label>
-                         <input type="text" name="cueCondition" onChange={handleChange} value={editPlace.cueCondition} />
+                         <input className="edit-field" type="text" name="cueCondition" onChange={handleChange} value={editPlace.cueCondition} />
                          <label htmlFor="vibe">Vibe: </label>
-                         <input type="text" name="vibe" onChange={handleChange} value={editPlace.vibe} />
+                         <input className="edit-field" type="text" name="vibe" onChange={handleChange} value={editPlace.vibe} />
                          <label htmlFor="newFriends">New Friends: </label>
-                         <input type="text" name="newFriends" onChange={handleChange} value={editPlace.newFriends} />
+                         <input className="edit-field" type="text" name="newFriends" onChange={handleChange} value={editPlace.newFriends} />
                          <input type="submit" value="edit place" />
                     </form>
                </details>
