@@ -6,7 +6,7 @@ const AddPlaceLink = () => {
 
      return (
           <div className="add-link-container">
-               <Link to="/new" className="add-link">+</Link>
+               <Link to="/new" className="add-link footer">+</Link>
           </div>
 
      )

@@ -5,13 +5,16 @@
      color: white;
 }
 
-html {
-     position: relative;
-     min-height: 100%;
+body {
+     margin: 0;
+     padding: 0;
+     height: 1000px;
+     /* overflow-y: scroll; */
 }
 
-body {
-     margin: 0 0 100px;
+.footer {
+     position: fixed;
+     bottom: 0;
 }
 
 h2 {
@@ -114,11 +117,6 @@ input[type=submit] {
 .add-link-container {
      display: flex;
      justify-content: flex-end;
-     position: absolute;
-     left: 0;
-     bottom: 0;
-     height: 100px;
-     width: 100%;
 }
 
 .add-link {

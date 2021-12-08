@@ -38,7 +38,7 @@ const PlacesListPage = () => {
                                    return place
                               } else if (place.locationCity.toLowerCase().includes(searchTerm.toLowerCase())) {
                                    return place
-                              } 
+                              }
                          }).map((place) => (
                               <div className="place-card" key={place.id}>
                                    <Place key={place.id} place={place} />

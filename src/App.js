@@ -13,15 +13,18 @@ const App = () => {
 
      return (
           <Router>
-          <div>
-               <Header />
-               <Routes>
-                    <Route path="/" exact element={<PlacesListPage />} />
-                    <Route path="/place/:id" exact element={<PlacePage />} />
-                    <Route path="/new" exact element={<AddPlace />} />
-               </Routes>
-          </div>
-
+          <body>
+               <header>
+                    <Header />
+               </header>
+               <main>
+                    <Routes>
+                         <Route path="/" exact element={<PlacesListPage />} />
+                         <Route path="/place/:id" exact element={<PlacePage />} />
+                         <Route path="/new" exact element={<AddPlace />} />
+                    </Routes>
+               </main>
+          </body>
           </Router>
      );
 }
