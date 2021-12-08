@@ -23,12 +23,14 @@ h2 {
 
 h3 {
      font-size: 18px;
+     text-align: center;
      margin-bottom: 0;
      margin-top: 5px;
 }
 
 h4 {
      font-size: 16px;
+     text-align: center;
      color: gray;
      margin: 0;
      padding-bottom: 2px;
@@ -78,6 +80,11 @@ input[type=submit] {
      margin-top: 10px;
 }
 
+.content-container {
+     height: 450px;
+
+}
+
 .place-list-header {
      text-align: center;
      border: 1px solid white;
@@ -91,7 +98,7 @@ input[type=submit] {
      display: flex;
      justify-content: center;
      align-items: flex-start;
-     height: 450px;
+     height: 60vh;
      overflow-y: scroll;
      border: 1px solid white;
      width: 90%;
