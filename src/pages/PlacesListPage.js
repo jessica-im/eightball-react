@@ -32,15 +32,15 @@ const PlacesListPage = () => {
                <div className="place-list-container">
                     <div className="place-list">
                          {places.filter((place) => {
-                              if (searchTerm == "") {
+                              if (searchTerm === "") {
                                    return place
                               } else if (place.locationName.toLowerCase().includes(searchTerm.toLowerCase())) {
                                    return place
                               } else if (place.locationCity.toLowerCase().includes(searchTerm.toLowerCase())) {
                                    return place
-                              }
+                              } 
                          }).map((place) => (
-                              <div className="place-card">
+                              <div className="place-card" key={place.id}>
                                    <Place key={place.id} place={place} />
                               </div>
                          ))}

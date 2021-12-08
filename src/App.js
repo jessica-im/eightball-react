@@ -1,8 +1,8 @@
 import './App.css';
+import React from 'react'
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
 import Header from './components/Header'
 import PlacesListPage from './pages/PlacesListPage'
 import PlacePage from './pages/PlacePage'

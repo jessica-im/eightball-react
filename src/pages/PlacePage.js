@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios'
 import EditPlace from '../components/EditPlace'
@@ -14,7 +13,7 @@ const PlacePage = () => {
           .then(
                (response) => setPlace(response.data),
                (error) => console.log(error),
-               console.log(place)
+               // console.log(place)
           )
           .catch((error) => console.log(error))
      }
