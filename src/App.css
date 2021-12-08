@@ -67,7 +67,7 @@ input[type=submit] {
 /* https://css-tricks.com/how-to-create-neon-text-with-css/ */
 .header h1 {
      font-family: 'Vibur';
-     font-size: 80px;
+     font-size: 40px;
      text-align: center;
      margin-bottom: 0;
      color: #fff;
@@ -299,8 +299,8 @@ input[type=submit] {
           margin-top: 10px;
      }
 
-     h1 {
-          font-size: 3em;
+     .header h1 {
+          font-size: 60px;
      }
 
      h3 {
