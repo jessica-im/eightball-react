@@ -8,8 +8,7 @@
 body {
      margin: 0;
      padding: 0;
-     height: 100vh;
-     overflow-y: hidden;
+     height: 100%;
 }
 
 html {
@@ -57,21 +56,43 @@ input[type=submit] {
      top: 0
 }
 
-.header h1 {
-     font-family: 'Futura';
+/* .header h1 {
+     font-family: 'Vibur';
      text-align: center;
      color: rgb(248, 40, 136, .4);
      margin-bottom: 0;
      -webkit-text-stroke: 1px rgb(248, 40, 136);
      text-shadow: 0px 0px 30px rgb(248, 40, 136);
-}
-
-/* .header h1 {
-     font-family: 'Futura';
-     text-align: center;
-     color: white;
-     margin-bottom: 0;
 } */
+/* https://css-tricks.com/how-to-create-neon-text-with-css/ */
+.header h1 {
+     font-family: 'Vibur';
+     font-size: 80px;
+     text-align: center;
+     margin-bottom: 0;
+     color: #fff;
+     /* text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #f09,
+      0 0 82px #f09,
+      0 0 92px #f09,
+      0 0 102px #f09,
+      0 0 151px #f09; */
+
+      text-shadow:
+      0 0 7px #fff,
+      0 0 10px rgb(57,255,20),
+      0 0 21px rgb(57,255,20),
+      0 0 42px rgb(57,255,20),
+      0 0 82px rgb(57,255,20),
+      0 0 92px rgb(57,255,20),
+      0 0 102px rgb(57,255,20),
+      0 0 151px rgb(57,255,20);
+
+     animation: pulsate 0.11s ease-in-out infinite alternate;
+}
 
 .header-break {
      font-family: "Redacted Script";
@@ -108,7 +129,6 @@ input[type=submit] {
 
 .content-container {
      height: 450px;
-
 }
 
 .place-list-header {
@@ -117,7 +137,7 @@ input[type=submit] {
      width: 90%;
      margin: 20px auto;
      margin-bottom: 0;
-     padding: 5px 0;
+     padding: 10px 0;
 }
 
 .place-list-container {
@@ -172,6 +192,7 @@ input[type=submit] {
      margin-bottom: 10px;
      margin-right: 10px;
 }
+
 
 /* //////////////////////////////
 // place page
@@ -268,8 +289,33 @@ input[type=submit] {
 
 @media only screen and (min-width: 700px) {
 
+     input[type=submit] {
+          font-family: 'Futura';
+          font-size: 20px;
+          border: none;
+          background-color: white;
+          color: black;
+          padding: 3px 10px;
+          margin-top: 10px;
+     }
+
      h1 {
           font-size: 3em;
+     }
+
+     h3 {
+          font-size: 20px;
+          text-align: center;
+          margin-bottom: 0;
+          margin-top: 10px;
+     }
+
+     h4 {
+          font-size: 18px;
+          text-align: center;
+          color: gray;
+          margin: 0;
+          padding-bottom: 2px;
      }
 
      .header-break {
@@ -277,10 +323,20 @@ input[type=submit] {
           padding-bottom: 10px;
      }
 
+     .eightball {
+          width: 30px;
+          display: inline-block;
+          object-fit: contain;
+          margin-top: 10px;
+          box-shadow: 0px 0px 28px 2px rgb(126,225,186);
+          border-radius: 50%;
+     }
+
      .place-list-header {
-          font-size: 25px;
+          font-size: 30px;
           width: 60%;
           margin-top: 30px;
+          padding: 10px 0;
      }
 
      .place-list-container {
@@ -292,9 +348,136 @@ input[type=submit] {
           padding: 2px 20px;
      }
 
-     add-link-container:hover {
-          border-color: rgb(248, 40, 136);
-          color: rgb(248, 40, 136);
+
+     /* //////////////////////////////
+     // place page
+     ////////////////////////////// */
+
+     .back-link-container {
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 40px;
      }
 
+     .back-link {
+          text-decoration: none;
+     }
+
+     .back-link h3 {
+          font-size: 30px;
+          margin-top: 0;
+     }
+
+     .place-details-container {
+          display: flex;
+          justify-content: center;
+          margin: 30px 0 40px 90px ;
+     }
+
+     .place-detail-table {
+          font-size: 22px;
+          width: 90%;
+     }
+
+     .place-title {
+          font-family: 'Futura';
+          font-size: 24px;
+          vertical-align: top;
+          width: 30%;
+     }
+
+     /* ///// edit form ///// */
+
+     .edit-form-container {
+          text-align: center;
+          margin-top: 20px;
+          padding-bottom: 20px;
+          font-family: 'Futura';
+     }
+
+     .edit-summary {
+          font-size: 20px;
+          color: rgb(204,204,255);
+          border: 1px solid white;
+          padding: 5px;
+          width: 20%;
+          margin: 0 auto;
+     }
+
+     .edit-form {
+          font-family: 'Futura';
+          font-size: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 10px;
+          gap: 5px;
+     }
+
+     .edit-field {
+          font-family: 'Futura';
+          font-size: 18px;
+          color: rgb(204,204,255);
+          border: 1px solid white;
+          width: 60%;
+          padding: 5px 5px 0;
+     }
+
+     .delete-button {
+          font-family: 'Futura';
+          font-size: 20px;
+          background-color: rgb(128,0,0, .7);
+          border: none;
+          padding: 0 15px;
+     }
+
+     /* //////////////////////////////
+     // add page
+     ////////////////////////////// */
+
+     .add-form {
+          display: flex;
+          font-size: 20px;
+          flex-direction: column;
+          align-items: center;
+          font-family: 'Futura';
+          gap: 5px;
+     }
+
+     .add-field {
+          font-family: 'Futura';
+          font-size: 20px;
+          color: rgb(204,204,255);
+          border: 1px solid white;
+          width: 60%;
+          padding: 5px 5px 0;
+     }
+
+}
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 4px rgb(57,255,20),
+      0 0 11px #fff,
+      0 0 19px rgb(57,255,20),
+      0 0 40px rgb(57,255,20),
+      0 0 80px rgb(57,255,20),
+      0 0 90px rgb(57,255,20),
+      0 0 100px rgb(57,255,20),
+      0 0 150px rgb(57,255,20);
+  }
+ 0% {
+    /* A slightly smaller blur radius */
+    text-shadow:
+      0 0 4px rgb(57,255,20),
+      0 0 10px #fff,
+      0 0 18px rgb(57,255,20),
+      0 0 38px rgb(57,255,20),
+      0 0 73px rgb(57,255,20),
+      0 0 80px rgb(57,255,20),
+      0 0 94px rgb(57,255,20),
+      0 0 140px rgb(57,255,20);
+  }
 }
