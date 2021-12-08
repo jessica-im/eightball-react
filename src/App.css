@@ -12,6 +12,11 @@ body {
      overflow-y: hidden;
 }
 
+html {
+     height: -webkit-fill-available;
+}
+
+
 .footer {
      position: fixed;
      bottom: 0;
