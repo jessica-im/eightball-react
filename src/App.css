@@ -265,3 +265,36 @@ input[type=submit] {
      width: 70%;
      padding: 5px 5px 0;
 }
+
+@media only screen and (min-width: 700px) {
+
+     h1 {
+          font-size: 3em;
+     }
+
+     .header-break {
+          font-size: 30px;
+          padding-bottom: 10px;
+     }
+
+     .place-list-header {
+          font-size: 25px;
+          width: 60%;
+          margin-top: 30px;
+     }
+
+     .place-list-container {
+          width: 60%;
+     }
+
+     .add-link {
+          font-size: 60px;
+          padding: 2px 20px;
+     }
+
+     add-link-container:hover {
+          border-color: rgb(248, 40, 136);
+          color: rgb(248, 40, 136);
+     }
+
+}
