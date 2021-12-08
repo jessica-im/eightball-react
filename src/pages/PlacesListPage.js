@@ -34,9 +34,6 @@ const PlacesListPage = () => {
                          <img className="eightball" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/pool-8-ball_1f3b1.png" alt="eightball" />
                     </div>
                </div>
-               <div>
-                    <AddPlaceLink getPlaces={getPlaces} />
-               </div>
                <h2 className="place-list-header">places</h2>
                <div className="place-list-container">
                     <div className="place-list">

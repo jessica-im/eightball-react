@@ -114,7 +114,7 @@ input[type=submit] {
      display: inline-block;
      object-fit: contain;
      margin-top: 10px;
-     box-shadow: 0px 0px 28px 2px rgb(126,225,186);
+     box-shadow: 0px 0px 35px 1px #f09;
      border-radius: 50%;
 }
 
@@ -323,13 +323,25 @@ input[type=submit] {
           padding-bottom: 10px;
      }
 
+     .search-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          margin-top: 10px;
+     }
+
      .eightball {
           width: 30px;
-          display: inline-block;
-          object-fit: contain;
+     }
+
+     .search {
+          font-family: 'Coming Soon';
+          font-size: 20px;
+          text-align: center;
+          width: 50%;
+          border: 1px solid rgb(204,204,255);
           margin-top: 10px;
-          box-shadow: 0px 0px 28px 2px rgb(126,225,186);
-          border-radius: 50%;
      }
 
      .place-list-header {
